@@ -1,8 +1,7 @@
 pipeline {
     agent any
     
-
-    stages {
+     stages {
         stage('Git checkout') {
             steps {
                 git branch: 'main', credentialsId: 'creds', url: 'https://github.com/navya-navya/hr-api'
